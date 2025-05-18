@@ -1,12 +1,18 @@
-import express from 'express'
-import bcrypt from 'bcryptjs'
-import jwt from 'jsonwebtoken'
-import db from '../db.js'
+import express from "express";
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
+import db from "../db.js";
 
-const router = express.Router()
+const router = express.Router();
 
-router.post('/register',(req,res)=>{
+// Middleware to check if the user is authenticated /auth/register
+router.post("/register", (req, res) => {
+  const { username, password } = req.body;
+  
+});
 
-})
+router.post("/login", (req, res) => {
+ 
+});
 
 export default router;
